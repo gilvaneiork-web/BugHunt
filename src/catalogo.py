@@ -12,5 +12,5 @@ def buscar_por_categoria(categoria):
     return [
         servico
         for servico in SERVICOS
-        if servico["categoria"] == categoria
+        if servico["categoria"] == categoria and servico["ativo"]
     ]
